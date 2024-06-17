@@ -3,9 +3,12 @@ PRAGMA foreign_keys = TRUE;
 .mode column -- present data as table --
 
 
-/* Task 2: SQL Data Definition
+/* SQL Data Definition
 
-In the following, there will be a table created and values inserted for every schema that was defined in Task 1.
+Creation of tables for every schema defined in Task 1.
+
+The values inserted are fictional and were generated using a Large Language Model (GPT3.5)
+
 Note that the order of tables matters because of foreign key constraints.
 */
 
@@ -469,7 +472,10 @@ VALUES
 
 
 
-/* Task 3: SQL Data Manipulation */
+/* SQL Data Manipulation 
+
+Exemplary SQL queries to access and extract data from the database defined above: 
+*/
 
 -- For testing purposes, create queries to retrieve all data from all tables created:
 	SELECT * FROM staff;
@@ -483,7 +489,7 @@ VALUES
 	SELECT * FROM arrives;
 	SELECT * FROM stop;
 
--- 1. List all services which have Seagate Bus Station in Dundee as their origin:
+-- 1. List all services which have "Seagate Bus Station" in Dundee as their origin:
 
 	SELECT origin_station_name, service_number
 	FROM service
@@ -550,9 +556,6 @@ VALUES
 		stop.stop_name = "Buchanan Gardens" AND arrives.arrival_time >= "10:00" AND arrives.arrival_time <= "14:00"
 	ORDER BY 
 		arrives.arrival_time;
-
-
--- Additional own queries:
 	
 -- 6. List ID and name of the driver with the minimum total salary.
 	
@@ -566,7 +569,7 @@ VALUES
 	) AS "Sum of salaries" ON driver.id = "Sum of salaries".id
 	JOIN staff ON driver.id = staff.id;
 
--- 7. Which service lines pass the stops Buchanan Gardens and Leuchars Railway Station?
+-- 7. Which service lines pass the stops "Buchanan Gardens" and "Leuchars Railway Station"?
 /*
 	SELECT service.service_number, service_time.start_time, arrives.arrival_time, arrives.stop_name
 	FROM service
@@ -605,7 +608,11 @@ VALUES
 	FROM staff
 	JOIN manager ON staff.id = manager.id
 	JOIN station ON manager.id = station.id
-	WHERE station.town = "Edinburgh" OR station.town = "Glasgow";  	
+	WHERE station.town = "Edinburgh" OR station.town = "Glasgow"; 
+
+
+
+/* SQL Views */ 
 	
 -- View 1: Customer
 
@@ -670,7 +677,3 @@ CREATE VIEW driver_2005 AS
 	GROUP BY drives.service_number;
 
 SELECT * FROM driver_2005;
-
-	
-	
-	
