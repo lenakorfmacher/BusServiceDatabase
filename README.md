@@ -13,7 +13,7 @@ By including this project in my portfolio, I aim to demonstrate my skills in SQL
 - Report explaining the database design and chosen queries.
 
 ## Usage
-1. Make sure you have SQLite installed on your system. You can download it from the [SQLite Download Page](https://www.kaggle.com/datasets/robikscube/flight-delay-dataset-20182022).
+1. Make sure you have SQLite installed on your system. You can download it from the [SQLite Download Page](https://www.sqlite.org/download.html).
 2. Clone the repository to your local machine.
 3. Open your terminal or command prompt, navigate to the directory where buses.sql is located, and run the following command, which will create a new SQLite database file named buses.db and execute the SQL commands from buses.sql to set up the database:
         **sqlite3 buses.db < buses.sql**
@@ -23,7 +23,7 @@ By including this project in my portfolio, I aim to demonstrate my skills in SQL
 
 
 ## Technologies Used
-SQL
+SQL, SQLite
 
 ## Szenario and Tasks
 The following is taken from the szenario and tasks description underlying this coursework component:
