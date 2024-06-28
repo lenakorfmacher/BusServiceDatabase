@@ -7,7 +7,7 @@ PRAGMA foreign_keys = TRUE;
 
 Creation of tables for every schema defined in Task 1.
 
-The values inserted are fictional and were generated using a Large Language Model (GPT3.5)
+The values inserted are fictional.
 
 Note that the order of tables matters because of foreign key constraints.
 */
