@@ -1,6 +1,6 @@
 # Bus Service Database
 
-SQL database of bus services.
+SQL database of exemplary bus services in Fife (Scotland).
 
 ## Purpose
 This project was developed as part of my coursework at the University of St Andrews. It was created to fulfill the requirements of a specific assignment. The suggested approach is an exemplary SQL database script including data definition and data manipulation queries.
