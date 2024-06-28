@@ -1,6 +1,6 @@
 PRAGMA foreign_keys = TRUE;
 
-.mode column -- present data as table --
+-- .mode column -- present data as table --
 
 
 /* SQL Data Definition
@@ -24,26 +24,26 @@ CREATE TABLE staff (
 
 INSERT INTO staff
 VALUES
-	("1001", "MacLeod", "EilidhMacLeod92@gmail.com", "14 Highland Avenue", "Aberdeen", "AB10 6NP"),
-	("1002", "Cameron", "c.cameron@outlook.com", "32 Castle Street", "Edinburgh", "EH2 3AY"),
-	("1003", "Fraser", "FionaFraser@yahoo.com", "8 Lochside Drive", "Glasgow", "G2 7RJ"),
-	("1004", "Sinclair", "Angus.S@hotmail.com", "45 Glenview Terrace", "Aberdeen", "AB10 6NP"),
-	("1005", "Drummond", "drummi@gmail.com", "21 Riverside Road", "Edinburgh", "EH2 3AY"),
-	("1006", "MacKenzie", "CallumMacKenzie@hotmail.com", "9 Braemar Crescent", "Stirling", "FK8 2LP"),
-	("1007", "Guthrie", "mg75@icloud.com", "15 Castlehill Crescent", "Edinburgh", "EH2 3AY"),
-	("1008", "Douglas", "Brodie.Douglas@yahoo.com", "12 Heather Lane", "Fort William", "PH33 6TU"),
-	("1009", "Ross", "IslaRoss@gmail.com", "56 Thistle Street", "Kirkwall", "KW15 1DW"),
-	("1010", "Campbell", "Alasdair.Campbell@outlook.com", "27 Ben Nevis Avenue", "Aviemore", "PH22 1PY"),
-	("2001", "MacGregor", "mg65@yahoo.com", "6 Dunrobin Place", "Thurso", "KW14 7HP"),
-	("2002", "MacNeil", "mickymacneil@gmail.com", "18 Glencoe Street", "Dundee", "DD1 4LB"),
-	("2003", "MacIntosh", "Ainsley.MacIntosh@hotmail.com", "3 Seaview Place", "Oban", "PA34 4RR"),
-	("2004", "Wallace", "walli99@gmail.com", "23 Skye Court", "Inverness", "IV51 9PJ"),
-	("2005", "MacRae", "aileen.macrae@icloud.com", "35 Paisley Road", "Motherwell", "ML1 2BE"),
-	("2006", "Buchanan", "Iona.Buchanan@yahoo.com", "50 Borders Lane", "Galashiels", "TD1 3DS"),
-	("2007", "MacFarlane", "Moira.MacFarlane@outlook.com", "11 Loch Ness Terrace", "Inverness", "IV63 6TX"),
-	("2008", "Sinclair", "sinclair@gmail.com", "2 Orkney Close", "Edinburgh", "EH2 3AY"),
-	("2009", "MacNeil", "MacNeil88@hotmail.com", "8 Paisley Road", "Stirling", "FK8 3YF"),
-	("2010", "MacKenzie", "mickmack76@gmail.com", "21 Seagate Street", "Dundee", "DD1 4LB")
+    (1001, 'MacLeod', 'EilidhMacLeod92@gmail.com', '14 Highland Avenue', 'Aberdeen', 'AB10 6NP'),
+    (1002, 'Cameron', 'c.cameron@outlook.com', '32 Castle Street', 'Edinburgh', 'EH2 3AY'),
+    (1003, 'Fraser', 'FionaFraser@yahoo.com', '8 Lochside Drive', 'Glasgow', 'G2 7RJ'),
+    (1004, 'Sinclair', 'Angus.S@hotmail.com', '45 Glenview Terrace', 'Aberdeen', 'AB10 6NP'),
+    (1005, 'Drummond', 'drummi@gmail.com', '21 Riverside Road', 'Edinburgh', 'EH2 3AY'),
+    (1006, 'MacKenzie', 'CallumMacKenzie@hotmail.com', '9 Braemar Crescent', 'Stirling', 'FK8 2LP'),
+    (1007, 'Guthrie', 'mg75@icloud.com', '15 Castlehill Crescent', 'Edinburgh', 'EH2 3AY'),
+    (1008, 'Douglas', 'Brodie.Douglas@yahoo.com', '12 Heather Lane', 'Fort William', 'PH33 6TU'),
+    (1009, 'Ross', 'IslaRoss@gmail.com', '56 Thistle Street', 'Kirkwall', 'KW15 1DW'),
+    (1010, 'Campbell', 'Alasdair.Campbell@outlook.com', '27 Ben Nevis Avenue', 'Aviemore', 'PH22 1PY'),
+    (2001, 'MacGregor', 'mg65@yahoo.com', '6 Dunrobin Place', 'Thurso', 'KW14 7HP'),
+    (2002, 'MacNeil', 'mickymacneil@gmail.com', '18 Glencoe Street', 'Dundee', 'DD1 4LB'),
+    (2003, 'MacIntosh', 'Ainsley.MacIntosh@hotmail.com', '3 Seaview Place', 'Oban', 'PA34 4RR'),
+    (2004, 'Wallace', 'walli99@gmail.com', '23 Skye Court', 'Inverness', 'IV51 9PJ'),
+    (2005, 'MacRae', 'aileen.macrae@icloud.com', '35 Paisley Road', 'Motherwell', 'ML1 2BE'),
+    (2006, 'Buchanan', 'Iona.Buchanan@yahoo.com', '50 Borders Lane', 'Galashiels', 'TD1 3DS'),
+    (2007, 'MacFarlane', 'Moira.MacFarlane@outlook.com', '11 Loch Ness Terrace', 'Inverness', 'IV63 6TX'),
+    (2008, 'Sinclair', 'sinclair@gmail.com', '2 Orkney Close', 'Edinburgh', 'EH2 3AY'),
+    (2009, 'MacNeil', 'MacNeil88@hotmail.com', '8 Paisley Road', 'Stirling', 'FK8 3YF'),
+    (2010, 'MacKenzie', 'mickmack76@gmail.com', '21 Seagate Street', 'Dundee', 'DD1 4LB')
 ;
 
 CREATE TABLE phone (
@@ -56,32 +56,32 @@ CREATE TABLE phone (
 
 INSERT INTO phone
 VALUES
-	("1001", "mobile", "+44 157833 1001"),
-	("1001", "landline", "+44 12345 1001"),
-	("1002", "mobile", "+44 157815 1002"),
-	("1003", "mobile", "+44 157844 1003"),
-	("1003", "landline", "+44 56789 1003"),
-	("1004", "mobile", "+44 157825 1004"),
-	("1004", "landline", "+44 13579 1004"),
-	("1005", "mobile", "+44 157833 1005"),
-	("1006", "mobile", "+44 157815 1006"),
-	("1006", "landline", "+44 98765 1006"),
-	("1007", "mobile", "+44 157815 1007"),
-	("1008", "mobile", "+44 157833 1008"),
-	("1009", "mobile", "+44 157844 1009"),
-	("1010", "mobile", "+44 157842 1010"),
-	("1010", "landline", "+44 90796 1010"),
-	("2001", "mobile", "+44 157891 2001"),
-	("2002", "mobile", "+44 157891 2002"),
-	("2003", "mobile", "+44 157892 2003"),
-	("2003", "landline", "+44 34567 2003"),
-	("2004", "mobile", "+44 157890 2004"),
-	("2005", "mobile", "+44 157893 2005"),
-	("2006", "mobile", "+44 157894 2006"),
-	("2007", "mobile", "+44 157890 2007"),
-	("2008", "mobile", "+44 157890 2008"),
-	("2009", "mobile", "+44 157892 2009"),
-	("2010", "mobile", "+44 157891 2010")
+    (1001, 'mobile', '+44 157833 1001'),
+    (1001, 'landline', '+44 12345 1001'),
+    (1002, 'mobile', '+44 157815 1002'),
+    (1003, 'mobile', '+44 157844 1003'),
+    (1003, 'landline', '+44 56789 1003'),
+    (1004, 'mobile', '+44 157825 1004'),
+    (1004, 'landline', '+44 13579 1004'),
+    (1005, 'mobile', '+44 157833 1005'),
+    (1006, 'mobile', '+44 157815 1006'),
+    (1006, 'landline', '+44 98765 1006'),
+    (1007, 'mobile', '+44 157815 1007'),
+    (1008, 'mobile', '+44 157833 1008'),
+    (1009, 'mobile', '+44 157844 1009'),
+    (1010, 'mobile', '+44 157842 1010'),
+    (1010, 'landline', '+44 90796 1010'),
+    (2001, 'mobile', '+44 157891 2001'),
+    (2002, 'mobile', '+44 157891 2002'),
+    (2003, 'mobile', '+44 157892 2003'),
+    (2003, 'landline', '+44 34567 2003'),
+    (2004, 'mobile', '+44 157890 2004'),
+    (2005, 'mobile', '+44 157893 2005'),
+    (2006, 'mobile', '+44 157894 2006'),
+    (2007, 'mobile', '+44 157890 2007'),
+    (2008, 'mobile', '+44 157890 2008'),
+    (2009, 'mobile', '+44 157892 2009'),
+    (2010, 'mobile', '+44 157891 2010')
 ;
 
 CREATE TABLE station (
@@ -94,16 +94,16 @@ CREATE TABLE station (
 
 INSERT INTO station
 VALUES 
-	("Buchanan Gardens", "St Andrews", "1001"),
-	("St Andrews Bus Station", "St Andrews", "1001"),
-	("Seagate Bus Station", "Dundee", "1002"),
-	("Edinburgh Bus Station", "Edinburgh", "1003"),
-	("Glasgow Bus Station", "Glasgow", "1004"),
-	("Aberdeen Central Railway Station", "Aberdeen", "1005"),
-	("Inverness Bus Station", "Inverness", "1006"),
-	("Perth Bus Station", "Perth", "1007"),
-	("Stirling Bus Station", "Stirling", "1008"),
-	("Leuchars Railway Station", "Leuchars", "1009")
+    ('Buchanan Gardens', 'St Andrews', 1001),
+    ('St Andrews Bus Station', 'St Andrews', 1001),
+    ('Seagate Bus Station', 'Dundee', 1002),
+    ('Edinburgh Bus Station', 'Edinburgh', 1003),
+    ('Glasgow Bus Station', 'Glasgow', 1004),
+    ('Aberdeen Central Railway Station', 'Aberdeen', 1005),
+    ('Inverness Bus Station', 'Inverness', 1006),
+    ('Perth Bus Station', 'Perth', 1007),
+    ('Stirling Bus Station', 'Stirling', 1008),
+    ('Leuchars Railway Station', 'Leuchars', 1009)
 ;
 	
 
